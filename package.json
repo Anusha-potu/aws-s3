@@ -1,0 +1,30 @@
+{
+    "name": "sqs-extended-client",
+    "version": "0.1.0",
+    "description": "Extended SQS client library for managing large AWS SQS message payloads using S3",
+    "author": "Ian Wang, DVLA",
+    "license": "MIT",
+    "homepage": "https://github.com/dvla/sqs-extended-client",
+    "main": "src/ExtendedSqsClient",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dvla/sqs-extended-client.git"
+    },
+    "scripts": {
+        "test": "jest --testPathPattern='src/.*'",
+        "system-test": "jest --testPathPattern='system-test/.*'"
+    },
+    "dependencies": {
+        "uuid": "^3.4.0"
+    },
+    "devDependencies": {
+        "aws-sdk": "^2.725.0",
+        "jest-cli": "^25.1.0"
+    },
+    "jest": {
+        "testEnvironment": "node"
+    },
+    "directories": {
+        "test": "__test__"
+    }
+}
